@@ -34,6 +34,7 @@
         "pages": [
           "getting-started/quickstart",
           "getting-started/create-account",
+          "getting-started/add-business",
           "getting-started/sign-in-security",
           {
             "group": "Workspace",
