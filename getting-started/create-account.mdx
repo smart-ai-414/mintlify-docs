@@ -4,29 +4,220 @@ sidebarTitle: "Create account"
 description: "Sign up, verify your email, and choose the right organization type for your team."
 ---
 
-Creating an account should take minutes. The decisions that matter—company vs personal workspace, who pays, and which email domain owns the org—are easier to correct now than after you have invited dozens of people.
+Sign-up is a guided, seven-step wizard. Each step builds the workspace identity, connects the tools you already use, and confirms billing before you land in your new workspace.
 
-## Sign up
+## The seven steps
 
-Visit the signup page and enter your work email. We send a one-time link to verify ownership of the address. Links expire; request a fresh one if your inbox is slow.
+<Steps>
+  <Step title="Profile">
+    Tell us how you work so we can tailor the workspace.
+  </Step>
+  <Step title="Account">
+    Create login credentials and your agency identity.
+  </Step>
+  <Step title="Ad platforms">
+    Connect the ad networks you manage.
+  </Step>
+  <Step title="CRM">
+    Link your customer data source.
+  </Step>
+  <Step title="Other tools">
+    Add reporting, analytics, and collaboration apps.
+  </Step>
+  <Step title="Plan & seats">
+    Pick a plan and the number of seats your team needs.
+  </Step>
+  <Step title="Review">
+    Confirm everything before your workspace is created.
+  </Step>
+</Steps>
 
-### Domains and policy
+## Step 1: Select your profile
 
-Some companies block consumer email providers. If signup fails silently, try your corporate domain or ask IT to allow the notification sender.
+Pick the option that matches how you'll use The Agency Engineer. We use this to customise your workspace and the tips you see during onboarding.
 
-## Organization type
+- **I'm an agency** — Manage multiple client accounts with centralised oversight. Unlocks the multi-client dashboard, team collaboration, and white-label reports.
+- **I'm a business** — Run your own marketing and lead-gen campaigns at scale. Unlocks a single-account focus, deep funnel insights, and revenue optimisation.
 
-- **Company** — Multiple teams under one billing profile. Choose this when finance expects a single invoice and you want shared administration.
-- **Personal** — Individual use with the option to upgrade later. Appropriate for evaluation before you commit a legal entity.
+<Tip>
+  Already have an account? Use the **Sign in** link in the top-right corner instead of completing the wizard.
+</Tip>
 
-### Switching later
+## Step 2: Create your account
 
-Moving between types may require support or export/import if your product separates billing identities. When in doubt, start as **Company** if you know you will onboard a team within a month.
+This step captures the essentials: your login plus the agency's workspace identity.
 
-## Verification issues
+### Choose a sign-in method
 
-If the email does not arrive within a few minutes, check spam folders and ensure your IT allowlist includes notification domains. Corporate filters sometimes delay the first message more than subsequent ones.
+Pick one of the following to authenticate. You can add the others later from account settings.
 
-### Shared inboxes
+- **Continue with Google** — Use your Google Workspace or Gmail identity.
+- **Continue with Facebook** — Sign in with your Facebook account.
+- **Email and password** — Enter a work email and a password to create a standalone login.
 
-Avoid signing up with distribution lists—you lose account recovery if nobody owns the mailbox. Prefer a named admin who can delegate later.
+### Your details
+
+Provide a few fields about you:
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| Work email | Yes | Used for login and account recovery. |
+| Password | Yes | Required when not using a social provider. |
+| Full name | No | Shown to teammates and clients. |
+| Phone | No | Optional, used only for account recovery. |
+
+### Your agency
+
+The workspace identity is what your team and clients will see.
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| Agency name | Yes | Displayed across the workspace and in reports. |
+| Workspace subdomain | No | We suggest one based on your agency name. You can customise it. |
+| Website | No | Optional link shown on shared client surfaces. |
+| Country | No | Used for currency and tax defaults. |
+
+<Warning>
+  Avoid signing up with a shared inbox or distribution list. If nobody owns the mailbox, account recovery becomes much harder later.
+</Warning>
+
+## Step 3: Which ad platforms do you run?
+
+Pick any ad networks you use today. Facebook & Instagram is fully integrated; selecting others helps us prioritise the roadmap and you'll be first to know when they ship.
+
+| Platform | Description | Status |
+| --- | --- | --- |
+| Facebook & Instagram | Meta Ads Manager | Live |
+| Google Ads | Search & Display | Soon |
+| YouTube Ads | Video campaigns | Soon |
+| TikTok Ads | Short-form video | Soon |
+| LinkedIn Ads | B2B targeting | Soon |
+| X (Twitter) Ads | Promoted posts | Soon |
+| Pinterest Ads | Visual discovery | Soon |
+| Snapchat Ads | Gen Z reach | Soon |
+
+<Tip>
+  You can **Skip for now** and add platforms later from workspace settings.
+</Tip>
+
+## Step 4: Which CRM keeps your pipeline?
+
+GoHighLevel works today. Selecting any other CRM tells us yours so we can sync contacts and pipelines once that connector ships.
+
+| CRM | Description | Status |
+| --- | --- | --- |
+| GoHighLevel | Full integration | Live |
+| HubSpot | Sales & marketing | Soon |
+| Salesforce | Enterprise CRM | Soon |
+| Pipedrive | Pipeline-first | Soon |
+| Zoho CRM | All-in-one suite | Soon |
+| ActiveCampaign | Marketing automation | Soon |
+| Close | Inside sales | Soon |
+
+## Step 5: What else is in your stack?
+
+Optional — pick anything you use. It helps us prioritise integrations that matter to you. All categories below are marked **Soon**.
+
+<Columns cols={2}>
+  <Card title="Email marketing">
+    Mailchimp, Klaviyo, SendGrid
+  </Card>
+
+  <Card title="Analytics">
+    GA4, Mixpanel, Amplitude
+  </Card>
+
+  <Card title="Automation">
+    Zapier, Make, n8n
+  </Card>
+
+  <Card title="Communication">
+    Slack, MS Teams
+  </Card>
+
+  <Card title="E-commerce">
+    Shopify, WooCommerce
+  </Card>
+
+  <Card title="CMS / Website">
+    WordPress, Webflow
+  </Card>
+
+  <Card title="Scheduling">
+    Calendly, Cal.com
+  </Card>
+
+  <Card title="Payments">
+    Stripe, PayPal, Square
+  </Card>
+
+  <Card title="SMS / Voice">
+    Twilio, OpenPhone
+  </Card>
+
+  <Card title="Forms & surveys">
+    Typeform, Jotform
+  </Card>
+</Columns>
+
+## Step 6: Choose your plan
+
+Switch billing intervals anytime. Add or remove seats as your team grows. Toggle between **Monthly** and **Yearly** (save 20%). Every plan starts with a **7-day free trial**.
+
+<CardGroup cols={3}>
+  <Card title="Starter — $9/mo">
+    **Up to 5 seats** · 10K free tokens every month
+
+    **What's included**
+
+    - Ad Accounts Management
+    - KPI Dashboard Support
+    - Ads Manager
+    - GHL & Facebook Account Integration
+    - Contact Management
+  </Card>
+
+  <Card title="Premium — $20/mo (Popular)">
+    **Up to 30 seats** · 50K free tokens every month
+
+    **What's included**
+
+    - Ad Accounts Management
+    - KPI Dashboard Support
+    - Ads Manager
+    - GHL & Facebook Account Integration
+    - Contact Management
+  </Card>
+
+  <Card title="Maxium — $100/mo">
+    **Up to 50 seats** · 200K free tokens every month
+
+    Great for bulk AI processes for marketing operations.
+
+    **What's included**
+
+    - Ad Accounts Management
+    - KPI Dashboard Support
+    - Ads Manager
+    - GHL & Facebook Account Integration
+    - Contact Management
+  </Card>
+</CardGroup>
+
+<Tip>
+  Not sure which plan to pick? Start on **Premium** during the 7-day free trial — you can downgrade to Starter before the trial ends with no charge.
+</Tip>
+
+## Next steps
+
+After Step 6 you'll land on **Step 7: Review** to confirm your selections, then your workspace is created.
+
+<CardGroup cols={2}>
+  <Card title="Connect Slack and CRMs" icon="plug" href="/getting-started/integrations">
+    Set up the integrations referenced in Steps 3–5.
+  </Card>
+
+  <Card title="Compare plans" icon="credit-card" href="/getting-started/billing/compare-plans">
+    Detailed comparison of the plans shown in Step 6.
+  </Card>
+</CardGroup>
