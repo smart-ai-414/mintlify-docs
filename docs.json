@@ -94,6 +94,8 @@
         "root": "product/index",
         "pages": [
           "product/interface-overview",
+          "product/all-accounts",
+          "product/dashboard",
           "product/keyboard-shortcuts",
           "product/search-navigation",
           {

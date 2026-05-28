@@ -1,0 +1,100 @@
+---
+title: "Business dashboard"
+sidebarTitle: "Dashboard"
+description: "Track spend, ROAS, leads, calls, and acquisition costs for a single client business with target-aware KPI cards."
+---
+
+The **Dashboard** is the per-business KPI view. Once you've selected a client from the top-left **Business Space** dropdown (for example, _Passive Income Dentist_), this screen rolls up Meta Ads spend, GoHighLevel pipeline activity, and revenue into a single set of cards.
+
+Open it from the left sidebar under **Operations → Dashboard**.
+
+## Header controls
+
+- **Business Space selector** — Switch between client businesses at the top of the page. All KPIs recompute for the chosen business.
+- **Search here** — Jump to a campaign, ad set, contact, or pipeline by name.
+- **Date range picker** — Filter every KPI card to a window (default shown: _2026-05-20 ~ 2026-05-27_). Sparklines redraw against the range.
+- **Filter Funnels** — Limit KPIs to one or more funnels so multi-offer clients can isolate performance.
+- **Layout toggle** (top-right grid icon) — Switch between compact and expanded card layouts.
+
+## KPI cards (top row)
+
+The first row covers money in and money out.
+
+| Card | What it shows | Source |
+| --- | --- | --- |
+| Spend | Total ad spend across connected ad accounts. | Meta Ads |
+| Cash Collected | Revenue actually collected from closed deals. | GoHighLevel |
+| FE ROAS | Front-end return on ad spend (cash collected on the entry offer ÷ spend). | Computed |
+| Contract Value | Total contract value of deals won in the range. | GoHighLevel |
+| ROAS | Overall return on ad spend (contract value ÷ spend). | Computed |
+
+Each card shows the current value, the period label (_from May 20_), and a sparkline of daily values across the selected range.
+
+## KPI cards (funnel row)
+
+The second row tracks funnel progression and unit economics.
+
+| Card | What it shows |
+| --- | --- |
+| Closes | Deals won in the period. |
+| CAC | Customer acquisition cost. Spend ÷ closes. |
+| Calls | Booked or completed sales calls. |
+| CPBC | Cost per booked call. Spend ÷ calls. |
+| Qualified Leads | Leads that met the qualification criteria configured in GHL. |
+| CPL | Cost per lead. Spend ÷ total leads. |
+| CPQL | Cost per qualified lead. Spend ÷ qualified leads. |
+| CPQBC | Cost per qualified booked call. Spend ÷ qualified booked calls. |
+
+## Target states
+
+Any KPI with a configured target is colour-coded:
+
+- **On target** — Value sits within the acceptable band of the target.
+- **Over target** — Value has crossed the threshold. The card shows the target inline (for example, $275.00 · Over target* on **CPBC**, or *$_15.00 · Over target_ on **CPL**).
+- **Warning** — Value is drifting toward the threshold.
+- **No target** — The card is shown without colour state.
+
+Hover the **info** icon on any card to see how the metric is calculated and which target it is compared against.
+
+<Tip>
+  Targets are configured per business in **Settings → Targets**. Setting realistic targets is what turns the dashboard from "a wall of numbers" into an exception report you can scan in seconds.
+</Tip>
+
+## Charts
+
+Below the cards, two charts break down activity over time:
+
+- **Leads / Calls / Closes** — Stacked or grouped time series showing funnel volume per day across the selected range.
+- **Spend vs Cost Per Lead / Booked Call** — Dual-axis chart that overlays daily spend against CPL and CPBC so you can see where higher spend stops producing efficient leads.
+
+Use the date picker and **Filter Funnels** to slice both charts the same way the cards are sliced.
+
+## Common workflows
+
+### Diagnose a rising CAC
+
+1. Note which KPI cards are red (for example, **CPL** over $15 or **CPBC** over $275).
+2. Open **Spend vs Cost Per Lead/Booked Call** and look for the day spend ramped without lead growth.
+3. Drill into **Ads Manager** to find the offending campaign or ad set.
+
+### Compare two windows
+
+1. Set the date range to the current week.
+2. Note the KPI values.
+3. Change the range to the previous week and compare; sparklines stay in sync with the chosen window.
+
+### Isolate a single offer
+
+Use **Filter Funnels** to pick one funnel so the dashboard reflects only that offer's spend, leads, and revenue. Useful for clients that run multiple offers from the same ad account.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="All Accounts" icon="table-cells" href="/product/all-accounts">
+    Compare KPIs across every client business in one table.
+  </Card>
+
+  <Card title="Add a business" icon="plus" href="/getting-started/add-business">
+    Onboard a new client so their KPIs show up here.
+  </Card>
+</CardGroup>

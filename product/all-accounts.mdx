@@ -1,0 +1,96 @@
+---
+title: "All Accounts: list of businesses"
+sidebarTitle: "All Accounts"
+description: "Monitor every client business in one table with leads, CPL, CPBC, CAC, spend, and contract value at a glance."
+---
+
+**All Accounts** is the agency's home screen. It lists every business you manage in a single table so you can spot underperforming clients, compare KPIs across the portfolio, and jump into any account quickly.
+
+Open it from the left sidebar under **Workspace → All Accounts**.
+
+## Header controls
+
+- **Date range picker** — Filter every row to a specific window (default: last 7 days). KPI cells recompute against the selected range.
+- **Filter** — Narrow the list by connection status, target state (over/on/under), or custom tags.
+- **Edit columns** — Show, hide, and reorder columns. Useful when an agency only tracks a subset of KPIs.
+- **Add business** — Launches the [Add a business wizard](/getting-started/add-business) to onboard a new client.
+- **Select Business Space** — Switch between business spaces (groupings of clients) at the top of the page.
+- **Search here** — Free-text search across business names.
+
+## Columns
+
+Each row represents one client business. Connection chips under the business name show which integrations are live for that account.
+
+| Column | What it shows |
+| --- | --- |
+| Business Name | Client name plus connection chips: **FB** (Meta Ads), **GHL** (GoHighLevel), and **\$** (billing/payment source). Green = connected, red = disconnected, amber warning = attention needed. |
+| Leads | Total leads captured in the selected date range. |
+| CPL | Cost per lead. Computed as spend ÷ leads. |
+| Calls | Number of booked or completed calls. |
+| CPBC | Cost per booked call. Spend ÷ calls. |
+| Closes | Deals won in the period. |
+| CAC | Customer acquisition cost. Spend ÷ closes. |
+| Spend | Total ad spend pulled from Meta Ads. |
+| Cash Collected | Revenue collected from closed deals. |
+| Contract Value | Total contract value of deals won. |
+| CPQL | Cost per qualified lead. |
+| CPQBC | Cost per qualified booked call. |
+
+<Tip>
+  Use **Edit columns** to hide metrics your agency doesn't report on. The setting is per-user, so account managers and owners can each pick their own view.
+</Tip>
+
+## KPI target states
+
+Every numeric KPI cell can carry a **target** and is colour-coded against it:
+
+- **Green — On target.** The value is within the acceptable band of its target (for example, $98.48 on target, target $_100.00_).
+- **Amber — Warning.** The value is drifting toward the threshold (for example, $205.92 warning, target $_180.00_).
+- **Red — Over target.** The value has crossed the threshold (for example, $105.55 over target, target $_68.00_).
+- **Neutral / grey.** No target is configured, or the metric is zero.
+
+Hover any cell to see its configured target and the underlying calculation.
+
+<Note>
+  Targets are set per business and per KPI in the business's settings. KPIs without a target are still displayed but never trigger a colour state.
+</Note>
+
+## Connection chips
+
+The chips under each business name reflect integration health:
+
+- **FB** — Meta Ads connection. Red means the OAuth token is invalid or revoked; reconnect from the business's settings.
+- **GHL** — GoHighLevel location connection. Same behaviour as FB.
+- **\$** — Billing or payment source. Amber warning indicates a missing or expiring payment method.
+
+If a chip is red, the metrics in that row may be stale or zero — fix the connection first before reading the KPIs.
+
+## Common workflows
+
+### Spot underperforming clients
+
+1. Set the date range to the period you review (for example, _last 7 days_).
+2. Scan the **CPL**, **CPBC**, and **CAC** columns for red cells.
+3. Click into the business to open its dashboard and drill into campaigns.
+
+### Add a new client
+
+Select **\+ Add Business** in the top right to launch the five-step wizard. See [Add a business and connect accounts](/getting-started/add-business) for the full walkthrough.
+
+### Fix a broken integration
+
+1. Find the business with a red **FB** or **GHL** chip.
+2. Open the business and go to its **Settings → Integrations** tab.
+3. Reconnect Facebook or GoHighLevel, then run a manual sync.
+
+## Next steps
+
+<CardGroup cols={2}>
+  <Card title="Add a business" icon="plus" href="/getting-started/add-business">
+    Onboard a new client with Meta Ads and GHL connections.
+  </Card>
+
+  <Card title="Dashboard" icon="chart-line" href="/product/interface-overview">
+    Drill into a single business's KPI dashboard.
+  </Card>
+</CardGroup>
